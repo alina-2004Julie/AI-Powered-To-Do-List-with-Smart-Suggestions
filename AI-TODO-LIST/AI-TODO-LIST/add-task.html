@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>➕ Add Task - AI To-Do List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <h2>✅ Smart To-Do</h2>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="add-task.html" class="active">➕ Add Task</a></li>
+      <li><a href="progress.html">📊 Progress</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
+      <li><a href="about.html">ℹ️ About</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Main Content -->
+  <section class="container">
+    <h2>Add Your Next Task! 📝</h2>
+    <p>Enter the details below and let our AI prioritize it for you! 🤖</p>
+    <form id="taskForm" onsubmit="return addTask();">
+      <input type="text" id="taskTitle" placeholder="Task Title" required>
+      <textarea id="taskDescription" placeholder="Task Description (optional)"></textarea>
+      <input type="date" id="taskDueDate" required>
+      <button type="submit" class="add-task-btn">Save Task</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>✨ Stay productive, stay awesome! ✨</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
